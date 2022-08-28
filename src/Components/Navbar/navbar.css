@@ -1,0 +1,41 @@
+.containerNavbarA {
+  height: 14vh;
+  background: none;
+}
+
+.containerNavbar {
+  height: 12vh;
+  background: none;
+}
+
+#create {
+  width: 17vh;
+  margin-right: 2vw;
+}
+
+#create:hover {
+  box-shadow: 0px 0px 10px 1px rgba(156, 0, 0, 0.98);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(156, 0, 0, 0.98);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(156, 0, 0, 0.98);
+}
+
+.navbar {
+  /* background: black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.toHomeNav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#pokepedia {
+  margin-top: 2vh;
+  margin-right: 1vw;
+  width: auto;
+  height: 11vh;
+}

@@ -1,0 +1,41 @@
+.containerToHome {
+}
+
+.homeButton {
+}
+
+.homeButton a {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.homeReset {
+  /* height: 7vh; */
+  width: 15vw;
+}
+
+.homeReset:hover {
+  box-shadow: 0px 0px 10px 1px rgba(156,0,0,0.98);
+-webkit-box-shadow: 0px 0px 10px 1px rgba(156,0,0,0.98);
+-moz-box-shadow: 0px 0px 10px 1px rgba(156,0,0,0.98); 
+}
+
+.home {
+  height: 7vh;
+}
+
+.home:hover {
+  box-shadow: 0px 0px 10px 1px rgba(156,0,0,0.98);
+-webkit-box-shadow: 0px 0px 10px 1px rgba(156,0,0,0.98);
+-moz-box-shadow: 0px 0px 10px 1px rgba(156,0,0,0.98); 
+}
+
+.pokego {
+  height: 11vh;
+}
+
+.homeSpan {
+  color: rgb(146, 12, 12);
+}
