@@ -1,17 +1,12 @@
 import axios from "axios";
 
 export const setPokemons = (payload) => (dispatch) => {
-  axios
-    .get(
-      "http://localhost:3001/pokemons" ||
-        "https://henrypokepedia.herokuapp.com/pokemons"
-    )
-    .then((res) =>
-      dispatch({
-        type: "SET_POKEMONS",
-        payload: res.data,
-      })
-    );
+  axios.get("https://henrypokepedia.herokuapp.com/pokemons").then((res) =>
+    dispatch({
+      type: "SET_POKEMONS",
+      payload: res.data,
+    })
+  );
 };
 
 export const resetPokemons = (clean) => {
@@ -31,10 +26,7 @@ export const sortPokemons = (order) => {
 export function catchPokemon(search) {
   return function (dispatch) {
     axios
-      .get(
-        `http://localhost:3001/pokemons?name=${search}` ||
-          `https://henrypokepedia.herokuapp.com/pokemons?name=${search}`
-      )
+      .get(`https://henrypokepedia.herokuapp.com/pokemons?name=${search}`)
       .then((res) => {
         dispatch({
           type: "CATCH_POKEMON",
@@ -73,10 +65,7 @@ export const selectedPokemon = (selected) => (dispatch) => {
     return;
   }
   axios
-    .get(
-      `http://localhost:3001/pokemons/${selected}` ||
-        `https://henrypokepedia.herokuapp.com/pokemons/${selected}`
-    )
+    .get(`https://henrypokepedia.herokuapp.com/pokemons/${selected}`)
     .then((res) =>
       dispatch({
         type: "POKEMON_DETAIL",
@@ -96,15 +85,10 @@ export const cleanDetail = (payload) => {
 };
 
 export const setTypes = (payload) => (dispatch) => {
-  axios
-    .get(
-      "http://localhost:3001/types" ||
-        "https://henrypokepedia.herokuapp.com/types"
-    )
-    .then((res) =>
-      dispatch({
-        type: "POKEMON_TYPES",
-        payload: res.data,
-      })
-    );
+  axios.get("https://henrypokepedia.herokuapp.com/types").then((res) =>
+    dispatch({
+      type: "POKEMON_TYPES",
+      payload: res.data,
+    })
+  );
 };
