@@ -48,9 +48,13 @@ export default function AddPokemon() {
   async function onSubmit(e) {
     try {
       e.preventDefault();
+      // await axios.post(
+      //   "http://localhost:3001/pokemons/create",
+      //   myPokemon || "https://henrypokepedia.herokuapp.com/pokemons/create",
+      //   myPokemon
+      // );
       await axios.post(
-        "http://localhost:3001/pokemons/create",
-        myPokemon || "https://henrypokepedia.herokuapp.com/pokemons/create",
+        "https://henrypokepedia.herokuapp.com/pokemons/create",
         myPokemon
       );
       setPokemons({
